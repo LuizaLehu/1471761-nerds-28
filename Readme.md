@@ -1,7 +1,8 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Leahu Luiza](https://up.htmlacademy.ru/htmlcss/28/user/1471761).
-* Наставник: [Николай Солодухин] (https://up.htmlacademy.ru/htmlcss/28/user/138404)
+* Наставник: [Николай Солодухин](https://up.htmlacademy.ru/htmlcss/28/user/138404).
+
 
 ---
 
