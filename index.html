@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="page">
   <header>
     <nav>
       <a>
@@ -21,7 +21,7 @@
           <a href="blank.html">Клиенты</a>
         </li>
         <li>
-          <a href="blank.html">Магазин</a>
+          <a href="catalog.html">Магазин</a>
         </li>
         <li>
           <a href="blank.html">Контакты</a>
@@ -117,38 +117,36 @@
               <li><a href=""><img src="https://via.placeholder.com/150x100" alt="logo.pink"></a></li>
               <li><a href=""><img src="https://via.placeholder.com/150x100" alt="logo.mishka"></a></li>
             </ul>
-
-
           </div>
         </section>
         <section>
-          <div>
+          
             <h4 class="visually-hidden">Our location</h4>
             <img src="https://via.placeholder.com/150x100" alt="city.map">
-            <div>
+        
               Nerds Design Studio
               <p>
                 191186, Сант-Петербург,
                 ул. Б.&nbsp;Конюшенаная, д.19/8
               </p>
               <p>
-                тел. +7(812)275-75-75
+                тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
               </p>
               <section>
-                <button>Напишите нам</button>
+                <button type="button">Напишите нам</button>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label for="namesurname">Ваше имя</label>
+                  <fieldset>
+                    <label for="namesurname">Ваше имя:</label>
                     <input type="text" id="namesurname" name="personname" placeholder="Имя Фамилия">
-                    <label for="email">Ваш email</label>
+                    <label for="email">Ваш email:</label>
                     <input type="email" id="email" name="personemail" placeholder="email@example.com">
-                  </p>
-                  <p>
-                    <label for="comment">Текст письма</label>
+                  </fieldset>
+                  <fieldset>
+                    <label for="comment">Текст письма:</label>
                     <textarea name="comment" id="comment" rows="4" placeholder="В свободной форме">
                    </textarea>
                     <button type="submit">Отправить</button>
-                  </p>
+                  </fieldset>
                 </form>
                 <button type="button">Закрыть</button>
               </section>
