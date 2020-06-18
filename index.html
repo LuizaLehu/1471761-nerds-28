@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title class="visually-hidden">HTML&nbsp;Academy: Нёрдс</title>
+  <title>HTML&nbsp;Academy: Нёрдс</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -136,24 +136,7 @@
       <p>
         тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
       </p>
-      <section>
-        <button type="button">Напишите нам</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <label for="namesurname">Ваше имя:</label>
-            <input type="text" id="namesurname" name="personname" placeholder="Имя Фамилия">
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" name="personemail" placeholder="email@example.com">
-          </fieldset>
-          <fieldset>
-            <label for="comment">Текст письма:</label>
-            <textarea name="comment" id="comment" rows="4">В свободной форме</textarea>
-            <button type="submit">Отправить</button>
-          </fieldset>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
-      
+      <button type="button">Напишите нам</button>
     </section>
   </main>
   <footer>
@@ -183,7 +166,22 @@
       </p>
     </div>
   </footer>
-
+  <section>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <label for="namesurname">Ваше имя:</label>
+        <input type="text" id="namesurname" name="personname" placeholder="Имя Фамилия">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" name="personemail" placeholder="email@example.com">
+      </fieldset>
+      <fieldset>
+        <label for="comment">Текст письма:</label>
+        <textarea name="comment" id="comment" rows="4">В свободной форме</textarea>
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
 </body>
 
 </html>
