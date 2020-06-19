@@ -1,7 +1,16 @@
+body {
+margin: 0;
+}
+
+a {
+text-decoration: none;
+}
+
 .page {
   padding: 50px 80px;
   line-height: 1.4;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: ;
 }
 
 .visually-hidden {
@@ -13,4 +22,16 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/*
+.button {
+  display: inline-block;
+}
+Button-vk {
+  background:blue;
+}
+
+Button-fb {
+  background:darkblue;
 }
