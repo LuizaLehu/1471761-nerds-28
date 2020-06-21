@@ -4,19 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Нёрдс</title>
-  <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheets" href="css/normalise.css">
-  <link rel="stylesheets" href="css/style.css">-->
+  <link rel="stylesheets" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page">
+<body class="page-body">
   <header>
-    <nav>
-      <a>
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li>
           <a href="blank.html">Студия</a>
         </li>
@@ -30,14 +29,14 @@
           <a href="blank.html">Контакты</a>
         </li>
       </ul>
-      <a href="blank.html">Корзина
-        <img src="img/cart-icon.svg" width="15" height="15" alt="Cart">
-      </a>
     </nav>
+    <a href="blank.html" class="cart">Корзина
+      <img src="img/cart-icon.svg" width="15" height="15" alt="Cart">
+    </a>
   </header>
-  <main>
+  <main class="container">
     <h1>nerd&rsquo;s</h1>
-    <section>
+    <section class="slider">
       <div>
         <h2>
           Долго, дорого, скрупулезно
@@ -48,12 +47,12 @@
       </div>
       <img src="https://via.placeholder.com/150x100" alt="">
     </section>
-    <section>
+    <section class="offer">
       <h3 class="visually-hidden">Предложения</h3>
-      <ul>
+      <ul class="offer-list">
         <li>
-          <img src="img/illustration_pc.jpg" width="300" height="146" alt="web">
-          <h3>ВЕБ-САЙТЫ</h3>
+          <img src="img/illustration_pc.jpg" class="img_computer" width="300" height="146" alt="web">
+          <h3 class="web">ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не&nbsp;будет прежним после того как увидит ваш сайт!</p>
           <a href="blank.html">Заказать</a>
         </li>
@@ -66,7 +65,7 @@
         </li>
         <li>
           <img src="img/illustration_tv.jpg" width="300" height="146" alt="presentation">
-          <h4>Презентации</h4>
+          <h3>Презентации</h3>
 
           <p>Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительные
           </p>
@@ -115,7 +114,6 @@
             50% Минимальная предоплата
           </li>
         </ul>
-
       </div>
       <div>
         <ul>
@@ -143,10 +141,8 @@
       </div>
     </section>
     <section>
-
-      <h4 class="visually-hidden">Our location</h4>
+      <h5 class="visually-hidden">Our location</h5>
       <img src="https://via.placeholder.com/150x100" alt="city.map">
-
       Nerds Design Studio
       <p>
         191186, Сант-Петербург,
@@ -186,8 +182,7 @@
     </div>
   </footer>
   <section>
-
-    <h4 class="visually-hidden">form</h4>
+    <h6 class="visually-hidden">form</h6>
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <label for="namesurname">Ваше имя:</label>

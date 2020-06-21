@@ -1,23 +1,49 @@
-:root {
-  
+/*@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+  url('../fonts/roboto.woff') format('woff');
+font-weight: 400;
+font-style: normal;
 }
 
-body {
-margin: 0;
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+  url('../fonts/roboto.woff') format('woff');
+font-weight: 700;
+font-style: normal;
 }
 
-a {
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+  url('../fonts/roboto.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+} */
+
+.page-body {
+  min-width: 1460;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+/* a {
 text-decoration: none;
 }
 
-.page {
-  padding: 50px 80px;
-  line-height: 1.4;
-  font-family: "Roboto", sans-serif;
-  margin: ;
-}
+img {
+  max-width: 100%;
+  height: auto;
+}  */
 
-.visually-hidden {
+. .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -28,14 +54,42 @@ text-decoration: none;
   overflow: hidden;
 }
 
-/*
-.button {
-  display: inline-block;
+/* main navigation
+.main-navigation {
+background-color: #a6a6a6;
+font-weight: 500px;
 }
-Button-vk {
-  background:blue;
+.site-navigation {
+  list-style: none;
 }
 
-Button-fb {
-  background:darkblue;
+.site-navigation-current a:not([href]) {
+  background-color: blue;
 }
+
+ cart 
+
+.site-navigation a,
+.cart a {
+ color: blue; 
+ text-transform: uppercase;
+}
+
+.site-navigation-current a:hover,
+.site-navigation-current a:focus,
+.cart a:hover,
+.cart a:focus {
+  background-color: :white;
+}
+
+.img_computer {
+position: absolute;
+width: 300px;
+height: 146px;
+left: 140px;
+top: 625px;
+
+
+}
+
+*/
