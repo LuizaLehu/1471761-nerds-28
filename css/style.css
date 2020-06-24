@@ -1,28 +1,28 @@
-/*@font-face {
+@font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff2') format('woff2'),
-  url('../fonts/roboto.woff') format('woff');
-font-weight: 400;
-font-style: normal;
+    url('../fonts/roboto.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff2') format('woff2'),
-  url('../fonts/roboto.woff') format('woff');
-font-weight: 700;
-font-style: normal;
+    url('../fonts/roboto.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff2') format('woff2'),
-  url('../fonts/roboto.woff') format('woff');
-font-weight: 500;
-font-style: normal;
-} */
+    url('../fonts/roboto.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
-.page-body {
+*/ .page-body {
   min-width: 1460;
   margin: 0;
   padding: 0;
@@ -31,17 +31,18 @@ font-style: normal;
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
+  background-color: transparent;
   color: #000000;
 }
 
-/* a {
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}  */
+}
 
 .visually-hidden {
   position: absolute;
@@ -54,40 +55,174 @@ img {
   overflow: hidden;
 }
 
-/* main navigation
+/* main navigation */
 .main-navigation {
-background-color: #a6a6a6;
-font-weight: 500px;
+  background-color: transparent;
+  font-weight: 500px;
+  line-hight: 30px;
+  font-weight: 500;
 }
+
+.main-navigation-wraper {
+  background-color: #a6a6a6;
+}
+
 .site-navigation {
   list-style: none;
 }
 
 .site-navigation-current a:not([href]) {
-  background-color: blue;
+  background-color: #a6a6a6;
 }
 
- cart 
-
-.site-navigation a,
+cart .site-navigation a,
 .cart a {
- color: blue; 
- text-transform: uppercase;
+  color: black;
+  text-transform: uppercase;
 }
 
-.site-navigation-current a:hover,
-.site-navigation-current a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
 .cart a:hover,
 .cart a:focus {
-  background-color: :white;
+  background-color: :#a6a6a6;
 }
 
-.img_computer {
-position: absolute;
-width: 300px;
-height: 146px;
-left: 140px;
-top: 625px;
+.slider-text {
+  text-align: left;
 }
 
-*/
+.slider-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.offer-list {
+  list-style: none;
+}
+
+.offer-item {
+  text-align: left;
+}
+
+.offer-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.offer-img {
+  border: 7px solid black;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.button .slider .button .web .button .write-to-us {
+  background-color: #FB565a;
+}
+
+.button .application {
+  background-color: #00ca74;
+}
+
+.button .presentation {
+  background-color: #efc849;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: inherit;
+}
+
+.description {
+  text-align: left;
+}
+
+.description-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.description-offer {
+  text-transform: uppercase;
+}
+
+.description-list {
+  list-style: none;
+  /* list-style-type: ;  */
+}
+
+.nerds-results {
+  text-align: center;
+}
+
+.results-description {
+  text-transform: uppercase;
+}
+
+.results {
+  list-style: none;
+}
+
+.results-number {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 65px;
+}
+
+.our-products {
+  align-items: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  align-items: left;
+}
+
+.footer-sale-offer {
+  line-height: 22px;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: darkgrey;
+}
+
+/* Write to us */
+
+.form-item input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid black);
+}
