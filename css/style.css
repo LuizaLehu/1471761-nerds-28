@@ -22,17 +22,27 @@
   font-style: normal;
 }
 
-*/ .page-body {
-  min-width: 1460;
+:root {
+  --basic-black: black;
+  --basic-yellow: #efc849;
+  --basic-red: #FB565a;
+  --basic-green: #00ca74;
+  --basic-white: white;
+  --basic-light-grey: #a6a6a6;
+  --basic-grey: grey;
+}
+
+.page-body {
+  min-width: 1460px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
   background-color: transparent;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 a {
@@ -57,14 +67,13 @@ img {
 
 /* main navigation */
 .main-navigation {
-  background-color: transparent;
-  font-weight: 500px;
-  line-hight: 30px;
+  background-color: var(--basic-light-grey);
+  line-height: 30px;
   font-weight: 500;
 }
 
 .main-navigation-wraper {
-  background-color: #a6a6a6;
+  background-color: var(--basic-light-grey);
 }
 
 .site-navigation {
@@ -72,12 +81,12 @@ img {
 }
 
 .site-navigation-current a:not([href]) {
-  background-color: #a6a6a6;
+  background-color: var(--basic-light-grey);
 }
 
-cart .site-navigation a,
-.cart a {
-  color: black;
+.site-navigation-link,
+.cart {
+  color: var(--basic-black);
   text-transform: uppercase;
 }
 
@@ -85,7 +94,7 @@ cart .site-navigation a,
 .site-navigation a:focus,
 .cart a:hover,
 .cart a:focus {
-  background-color: :#a6a6a6;
+  background-color: var(--basic-light-grey);
 }
 
 .slider-text {
@@ -114,7 +123,7 @@ cart .site-navigation a,
 }
 
 .offer-img {
-  border: 7px solid black;
+  border: 7px solid vaar(--basic-black);
 }
 
 /* Button */
@@ -122,7 +131,7 @@ cart .site-navigation a,
 .button {
   font: inherit;
   text-align: center;
-  color: white;
+  color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
@@ -131,15 +140,15 @@ cart .site-navigation a,
 }
 
 .button .slider .button .web .button .write-to-us {
-  background-color: #FB565a;
+  background-color: var(--basic-red);
 }
 
 .button .application {
-  background-color: #00ca74;
+  background-color: var(--basic-green);
 }
 
 .button .presentation {
-  background-color: #efc849;
+  background-color: var(--basic-yellow);
 }
 
 .button:hover,
@@ -164,7 +173,7 @@ cart .site-navigation a,
 
 .description-list {
   list-style: none;
-  /* list-style-type: ;  */
+
 }
 
 .nerds-results {
@@ -201,7 +210,7 @@ cart .site-navigation a,
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
-  align-items: left;
+
 }
 
 .footer-sale-offer {
@@ -216,7 +225,7 @@ cart .site-navigation a,
 
 .social-button:hover,
 .social-button:focus {
-  background-color: darkgrey;
+  background-color: var(--basic-grey);
 }
 
 /* Write to us */
@@ -225,4 +234,52 @@ cart .site-navigation a,
   font: inherit;
   background-color: transparent;
   border: 2px solid black);
+}
+
+.catalog-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: var(--basic-light-grey);
+
+}
+
+.title-group {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.filter-option {
+  line-height: 19px;
+  list-style: none;
+}
+
+.group-submit {
+  background-color: var(--basic-light-grey);
+}
+
+.catalog-item {
+  list-style: none;
+}
+
+.info-plus {
+  text-align: center;
+  background-color: var(--basic-light-grey);
+}
+
+.item-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.item-price {
+  font-weight: 500;
+  background-color: var(--basic-red);
 }
