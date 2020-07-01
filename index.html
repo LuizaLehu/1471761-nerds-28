@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -16,23 +16,27 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
       <div class="main-navigation-wraper">
-        <ul class="site-navigation">
-          <li>
-            <a class="site-navigation-link" href="blank.html">Студия</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="blank.html">Клиенты</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="blank.html">Контакты</a>
-          </li>
-        </ul>
-        <a href="blank.html" class="cart">Корзина
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Cart">
-        </a>
+        <div class="container">
+          <ul class="site-navigation">
+            <li>
+              <a class="site-navigation-link" href="blank.html">Студия</a>
+            </li>
+            <li>
+              <a class="site-navigation-link" href="blank.html">Клиенты</a>
+            </li>
+            <li>
+              <a class="site-navigation-link" href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a class="site-navigation-link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="cart">
+            <a class="cart-link" href="blank.html">Корзина
+              <img src="img/cart-icon.svg" width="15" height="15" alt="Cart">
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -56,13 +60,13 @@
         <li class="offer-item">
           <img src="img/illustration_pc.jpg" class="offer-img" width="300" height="146" alt="web">
           <h3 class="offer-title">ВЕБ-САЙТЫ</h3>
-          <p>Мир никогда не&nbsp;будет прежним после того как увидит ваш сайт!</p>
+          <p class="offer-text">Мир никогда не&nbsp;будет прежним после того как увидит ваш сайт!</p>
           <a href="blank.html" class="button web">Заказать</a>
         </li>
         <li class="offer-item">
           <img src="img/illustration_phone.jpg" class="offer-img" width="300" height="146" alt="aplication">
           <h3 class="offer-title">Приложение</h3>
-          <p>Покорите топ-10 приложений в&nbsp;AppStore и&nbsp;Google Play
+          <p class="offer-text">Покорите топ-10 приложений в&nbsp;AppStore и&nbsp;Google Play
           </p>
           <a href="blank.html" class="button application">Заказать</a>
         </li>
@@ -70,7 +74,7 @@
           <img src="img/illustration_tv.jpg" class="offer-img" width="300" height="146" alt="presentation">
           <h3 class="offer-title">Презентации</h3>
 
-          <p>Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительные
+          <p class="offer-text">Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительные
           </p>
           <a href="blank.html" class="button presentation">Заказать</a>
         </li>
@@ -108,15 +112,15 @@
         </p>
         <ul class="results">
           <li class="results-items">
-            <p class="results-number">146% </p>
+            <p class="results-number">146<span class="result-procent">%</span></p>
             <p>Уровень самоотдачи</p>
           </li>
           <li class="results-items">
-            <p>100%</p>
+            <p class="results-number">100<span class="result-procent">%</span></p>
             <p>Сооблюдение сроков</p>
           </li>
           <li class="results-items">
-            <p>50%</p>
+            <p class="results-number">50<span class="result-procent">%</span></p>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -148,7 +152,7 @@
     </section>
     <section class="contacts">
       <h5 class="visually-hidden">Our location</h5>
-      <img src="https://via.placeholder.com/150x100" alt="city.map">
+      <img src="https://via.placeholder.com/1440x416" alt="city.map">
       Nerds Design Studio
       <p>
         191186, Сант-Петербург,
@@ -160,9 +164,9 @@
       <button type="button" class="button write-to-us">Напишите нам</button>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer main footer">
     <div class="footer-social">
-      <ul>
+      <ul class="social-icons">
         <li class="social-item">
           <a class="social-button" href="#">Вконтакте
             <img src="img/vk-icon.svg" width="26" height="15" alt="vkontakte">
