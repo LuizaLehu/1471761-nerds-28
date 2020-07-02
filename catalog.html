@@ -10,36 +10,40 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+    <nav class="main-navigation container">
+      <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
-      <div class="main-navigation-wraper">
-        <ul class="site-navigation">
-          <li>
-            <a href="blank.html">Студия</a>
-          </li>
-          <li>
-            <a href="blank.html">Клиенты</a>
-          </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="blank.html">Контакты</a>
-          </li>
-        </ul>
-        <a href="blank.html" class="cart">Корзина
-          <img src="img/cart-icon.svg" width="15" height="15" alt="cart">
-        </a>
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <ul class="site-navigation">
+        <li>
+          <a class="site-navigation-link" href="blank.html">Студия</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="blank.html">Клиенты</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="blank.html">Контакты</a>
+        </li>
+      </ul>
+      <div class="cart">
+        <a class="cart-link" href="blank.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+            <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5" />
+            <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5" />
+            <path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+            Корзина </a>
       </div>
     </nav>
   </header>
+  <h1 class="catalog-title">Магазин готовых шаблонов</h1>
   <main class="page catalog container">
-    <section>
-      <h2 class="visually-hidden">filters</h2>
-      <aside>
+   
+    <section class="products">
+      
+      <aside class="aside-filter">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend class="title-group">Сетка:</legend>
@@ -83,12 +87,14 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="button group-submit">Показать</button>
+          <button type="submit" class="button button--grey">Показать</button>
         </form>
       </aside>
-    </section>
 
-    <!-- <div>filters-up
+    
+    <section class="catalog">
+      <!-- <div>filters-up
+      <h2 class="visually-hidden">filters</h2>
         <div>
           Стоимость
         </div>
@@ -97,7 +103,6 @@
         </div>
 
       </div>-->
-    <section class="catalog">
       <h3 class="visually-hidden">Каталог макетов</h3>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -127,7 +132,7 @@
           <div class="info-plus">
             <h3 class="item-title">Borodinski</h3>
             <p class="item-description">Сайт Barbershop</p>
-            <p class="item-price">9900₽</p>
+            <p class="catalog-item-price">9900₽</p>
           </div>
         </li>
         <li class="catalog-item">
@@ -162,6 +167,7 @@
         </li>
       </ul>
     </section>
+  </section>
     <section class="contacts">
       <div>
         <h4>Our location</h4>
@@ -175,35 +181,39 @@
           <p>
             тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
           </p>
-          <button type="button" class="button write-to-us">Напишите нам</button>
+          <button type="button" class="button button--red">Напишите нам</button>
         </div>
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer main footer container">
+    <div class="footer-content">
     <div class="footer-social">
-      <ul>
+      <ul class="social-icons">
         <li class="social-item">
-          <a class="social-button" href="#">Вконтакте
-            <img src="img/vk-icon.svg" width="100" height="50" alt="vkontakte">
+          <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
+            <img src="img/vk-icon.svg" width="26" height="15" alt="vkontakte">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-button" href="#">Фейсбук
-            <img src="img/fb-icon.svg" width="100" height="50" alt="facebook">
+          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+            <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-button" href="#">Инстаграм
-            <img src="img/insta-icon.svg" width="100" height="50" alt="instagram">
+          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
+            <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
           </a>
         </li>
       </ul>
     </div>
     <div class="footer-text">
       <p class="footer-title">Давайте дружить, это выгодно!</p>
-      <p class="footer-sale-offer">Скидка&nbsp;10% для друзей из&nbsp;социальных сетей</p>
+      <p class="footer-sale-offer">
+        Скидка&nbsp;10% для друзей из&nbsp;социальных сетей
+      </p>
     </div>
+  </div>
   </footer>
 </body>
 

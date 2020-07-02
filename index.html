@@ -11,48 +11,48 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="logo">
       </a>
-      <div class="main-navigation-wraper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li>
-              <a class="site-navigation-link" href="blank.html">Студия</a>
-            </li>
-            <li>
-              <a class="site-navigation-link" href="blank.html">Клиенты</a>
-            </li>
-            <li>
-              <a class="site-navigation-link" href="catalog.html">Магазин</a>
-            </li>
-            <li>
-              <a class="site-navigation-link" href="blank.html">Контакты</a>
-            </li>
-          </ul>
-          <div class="cart">
-            <a class="cart-link" href="blank.html">Корзина
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Cart">
-            </a>
-          </div>
-        </div>
+      <ul class="site-navigation">
+        <li>
+          <a class="site-navigation-link" href="blank.html">Студия</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="blank.html">Клиенты</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="blank.html">Контакты</a>
+        </li>
+      </ul>
+      <div class="cart">
+        <a class="cart-link" href="blank.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+            <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5" />
+            <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5" />
+            <path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+            Корзина </a>
       </div>
     </nav>
-
   </header>
   <main class="container">
     <h1 class="visually-hidden">nerd&rsquo;s</h1>
     <section class="slider">
       <div class="slider-text">
         <h2 class="slider-title">
-          Долго, дорого, скрупулезно
+          Долго, дорого,<br>скрупулезно</br>
         </h2>
-        <p>Математический вывериный дизайн для вашего сайта или мобильного приложения.
+        <p>Математический вывериный дизайн <br>для вашего сайта или мобильного приложения.</br>
         </p>
-        <a href="blank.html" class="button slider"> Узнать больше</a>
+        <a href="blank.html" class="button button--red"> Узнать больше</a>
       </div>
-      <img src="https://via.placeholder.com/150x100" width="760" height="431" alt="slider-picure" class="slider-img">
+      <div class="slider-img">
+        <img src="img/nerds-index-slide1 1.png" width="760" height="431" alt="slider-picure" class="slider-img">
+      </div>
     </section>
     <section class="offer">
       <h3 class="visually-hidden">Предложения</h3>
@@ -61,14 +61,14 @@
           <img src="img/illustration_pc.jpg" class="offer-img" width="300" height="146" alt="web">
           <h3 class="offer-title">ВЕБ-САЙТЫ</h3>
           <p class="offer-text">Мир никогда не&nbsp;будет прежним после того как увидит ваш сайт!</p>
-          <a href="blank.html" class="button web">Заказать</a>
+          <a href="blank.html" class="button button--red">Заказать</a>
         </li>
         <li class="offer-item">
           <img src="img/illustration_phone.jpg" class="offer-img" width="300" height="146" alt="aplication">
           <h3 class="offer-title">Приложение</h3>
           <p class="offer-text">Покорите топ-10 приложений в&nbsp;AppStore и&nbsp;Google Play
           </p>
-          <a href="blank.html" class="button application">Заказать</a>
+          <a href="blank.html" class="button button--green">Заказать</a>
         </li>
         <li class="offer-item">
           <img src="img/illustration_tv.jpg" class="offer-img" width="300" height="146" alt="presentation">
@@ -76,19 +76,18 @@
 
           <p class="offer-text">Вы&nbsp;даже не&nbsp;подозреваете, насколько вы&nbsp;изумительные
           </p>
-          <a href="blank.html" class="button presentation">Заказать</a>
+          <a href="blank.html" class="button button--yellow">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="description">
-      <div>
+      <div class="presentation">
         <h4 class="description-title">
-          Мы -маленкая, но&nbsp;гордая дизайн-студия из&nbsp;Краснодара
+          Мы -маленкая, но&nbsp;гордая <br>дизайн-студия из&nbsp;Краснодара</br>
         </h4>
         <p class="description-text">
-          Исповедуем принципы минимализма и&nbsp;чистоты. Ставим математический расчет превыше креатива. Работаем
-          непокладая
-          рук, как роботы.
+          Исповедуем принципы минимализма и&nbsp;чистоты. Ставим математический расчет <br>превыше креатива. Работаем
+          непокладая рук, как роботы.</br>
         </p>
         <p class="description-offer">
           Выполняем заказы на&nbsp;разработку
@@ -106,7 +105,7 @@
         </ul>
       </div>
       <div class="nerds-results">
-        <img src="https://via.placeholder.com/150x100" class="second-logo" alt="logo.nerds">
+        <img src="img/nerds-illustration 1.png" class="second-logo" width="360" height="208" alt="logo.nerds">
         <p class="results-description">
           С&nbsp;2004 года любим точность во&nbsp;всем:
         </p>
@@ -125,31 +124,31 @@
           </li>
         </ul>
       </div>
-      <div class="our-products">
-        <ul>
-          <li>
-            <a href="">
-              <img src="https://via.placeholder.com/150x100" alt="logo.htmlacdemy">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="https://via.placeholder.com/150x100" alt="logo.borodinski">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="https://via.placeholder.com/150x100" alt="logo.pink">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="https://via.placeholder.com/150x100" alt="logo.mishka">
-            </a>
-          </li>
-        </ul>
-      </div>
     </section>
+    <div class="our-products">
+      <ul class="our-products__list">
+        <li class="our-products__item">
+          <a href="">
+            <img src="img/html-academy-logo.png" width="199" height="68" alt="html academy">
+          </a>
+        </li>
+        <li class="our-products__item">
+          <a href="">
+            <img src="img/logo-borodinski.png" width="209" height="90" alt="borodinski">
+          </a>
+        </li>
+        <li class="our-products__item">
+          <a href="">
+            <img src="img/logo-pink.png" width="185" height="52" alt="pink">
+          </a>
+        </li>
+        <li class="our-products__item">
+          <a href="">
+            <img src="img/logo-mishka.png" width="173" height="84" alt="mishka">
+          </a>
+        </li>
+      </ul>
+    </div>
     <section class="contacts">
       <h5 class="visually-hidden">Our location</h5>
       <img src="https://via.placeholder.com/1440x416" alt="city.map">
@@ -161,24 +160,25 @@
       <p>
         тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
       </p>
-      <button type="button" class="button write-to-us">Напишите нам</button>
+      <button type="button" class="button button--red">Напишите нам</button>
     </section>
   </main>
-  <footer class="page-footer main footer">
+  <footer class="page-footer main footer container">
+    <div class="footer-content">
     <div class="footer-social">
       <ul class="social-icons">
         <li class="social-item">
-          <a class="social-button" href="#">Вконтакте
+          <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
             <img src="img/vk-icon.svg" width="26" height="15" alt="vkontakte">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-button" href="#">Фейсбук
+          <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
             <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
           </a>
         </li>
         <li class="social-item">
-          <a class="social-button" href="#">Инстаграм
+          <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
             <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
           </a>
         </li>
@@ -190,6 +190,7 @@
         Скидка&nbsp;10% для друзей из&nbsp;социальных сетей
       </p>
     </div>
+  </div>
   </footer>
   <section class="person-contact-form">
     <h6 class="visually-hidden">form</h6>
