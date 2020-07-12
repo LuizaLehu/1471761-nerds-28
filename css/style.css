@@ -478,13 +478,33 @@ input[type="radio"].visually-hidden {
 
 .contacts-wraper {
   box-shadow: inset 0px 3px 0p var(--button-shadow-color);
+  width: 100%;
   max-width: 319px;
+  max-height: 308px;
   border: 2px solid var(--basic-yellow);
   position: absolute;
+  margin-top: 50px;
+  margin-left: 140px;
   margin-bottom: 40px;
+  background-color: var(--basic-white);
+  padding: 50px;
+  box-sizing: border-box;
 }
 
-/* Write to us */
+.contacts-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.contacts-text {
+  line-height: 18px;
+}
+
+/* Write to us modal */
 
 .modal {
   top: 120px;
@@ -504,8 +524,9 @@ input[type="radio"].visually-hidden {
   left: 0;
   margin: auto;
   color: var(--basic-black);
-  display: none;
 }
+
+
 
 .modal-title {
   margin: 0;
@@ -554,15 +575,18 @@ input[type="radio"].visually-hidden {
 .modal {
   display: inline-block;
   vertical-align: baseline;
+  display: none;
 }
 
 .modal-title {
   margin: 0, 0, 30px, 0;
   font-size: 24px;
-  line-height: 2;
+  line-height: 24px;
 }
 
-
+/**.modal-contacts {
+  display: none;
+}  **/
 
 .form-item {
   margin: 0;
@@ -571,11 +595,27 @@ input[type="radio"].visually-hidden {
 
 .form-input-wrapper {
   display: flex;
+  max-width: 960px;
+  max-height: 590px;
+  
 }
 
 .form-info--half {
   width: 50%;
 }
+
+.form-info-plus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
 
 /* Catalog */
 
@@ -700,6 +740,12 @@ input[type="radio"].visually-hidden {
   left: 160px;
 }
 
+.filter-option {
+  opacity: 0.4;
+}
+
+
+
 /* Button */
 
 .button {
@@ -822,13 +868,23 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   list-style: none;
-  /**position: relative;**/
+  position: relative;
 }
 
 .info-plus {
+  display: block;
   text-align: center;
   background-color: var(--basic-light-grey);
-  /**position: absolute;  **/
+  position: absolute; 
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  display: none;
+  max-height: 250px;
+}
+
+.catalog-item:hover .info-plus {
+  display: block;
 }
 
 .item-title {
@@ -841,6 +897,15 @@ input[type="radio"].visually-hidden {
   margin-right: 144px;
   margin-bottom: 20px;
   margin-left: 145px;
+}
+
+.item-title:hover {
+  color: var(--basic-red);
+}
+
+.item-title:active {
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 .catalog-item-price {
@@ -856,3 +921,4 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   color: var(--basic-white);
 }
+

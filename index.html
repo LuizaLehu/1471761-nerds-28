@@ -161,28 +161,28 @@
     <section class="contacts">
       <h5 class="visually-hidden">Our location</h5>
       <div class="map-wraper">
+        <div class="contacts-wraper">
+          <p class="contacts-title">
+            Nerds Design Studio
+          </p>
+          <p class="contacts-text">
+            191186, Сант-Петербург,<br>
+            ул. Б.&nbsp;Конюшенаная, д.19/8
+          </p>
+          <p class="contacts-text">
+            тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
+          </p>
+          <button type="button" class="button button--red">Напишите нам</button>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1594311411536!5m2!1sen!2s"
           width="1440" height="416" frameborder="0" style="border:0;" class="map" allowfullscreen="" aria-hidden="false"
           title="Nerds Design Studio 191186, Сант-Петербург,
-        ул. Б.Конюшенаная, д.19/8" tabindex="0"></iframe>
-      </div>
-      <div class="contacts-wraper">
-        <p class="contacts-title">
-          Nerds Design Studio
-        </p>
-        <p>
-          191186, Сант-Петербург,<br>
-          ул. Б.&nbsp;Конюшенаная, д.19/8
-        </p>
-        <p>
-          тел.<a href="tel:+7(812)275-75-75">+7(812)275-75-75</a>
-        </p>
-        <button type="button" class="button button--red">Напишите нам</button>
+        ул. Б.Конюшенаная, д.19/8" tabindex="0">
+        </iframe>
       </div>
     </section>
   </main>
-
   <footer class="page-footer main footer container">
     <div class="footer-content">
       <div class="footer-social">
@@ -212,7 +212,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal modal-contacts">
     <form class="form-contacts" action="https://echo.htmlacademy.ru" method="post">
       <h6 class="modal-title">Напишите нам</h6>
       <div class="form-input-wrapper">
@@ -225,12 +225,11 @@
           <input type="email" id="email" name="person-email" placeholder="email@example.com" class="form item">
         </p>
       </div>
-
-      <p class="form-info">
+      <p class="form-info form-info-plus">
         <label for="comment" class="form-label">Текст письма:</label>
         <textarea name="comment" id="comment" rows="4">В свободной форме</textarea>
-        <button type="submit" class="button">Отправить</button>
       </p>
+      <button type="submit" class="button button--red">Отправить</button>
       <button class="modal-close" type="button" aria-label="Закрыть">
       </button>
     </form>
