@@ -66,7 +66,6 @@
           </fieldset>
         </form>
         <section class="products">
-
           <aside class="aside-filter">
             <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
@@ -115,69 +114,114 @@
             </form>
           </aside>
 
-          <h3 class="visually-hidden">Каталог макетов</h3>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">Sedona</span>
-                <img src="img/mask.group-sedona.jpg" width="360" height="580" alt="Sedona">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">Sedona</h3>
-                <p class="item-description">Информационый сайт<br>для туристов</br></p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">Pink</span>
-                <img src="img/mask-group-pink.jpg" width="358" height="578" alt="Pink">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">Pink</h3>
-                <p class="item-description">Информационый сайт</p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">Borodinski</span>
-                <img src="img/mask-group-borodinski.jpg" width="358" height="578" alt="Borodinski">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">Borodinski</h3>
-                <p class="item-description">Сайт Barbershop</p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">Mishka</span>
-                <img src="img/mask-group-mishka.jpg" width="358" height="578" alt="Mishka">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">Mishka</h3>
-                <p class="item-description">Сайт вязание на заказ</p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">A+</span>
-                <img src="img/mask-group-aplus.jpg" width="358" height="578" alt="A+">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">A+</h3>
-                <p class="item-description">Сайт онлине обучения</p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-            <li class="catalog-item">
-              <a href="blank.html"><span class="visually-hidden">KBACT</span>
-                <img src="img/mask-group-kvast.jpg" width="358" height="578" alt="Kvast">
-              </a>
-              <div class="info-plus">
-                <h3 class="item-title">KBACT</h3>
-                <p class="item-description">Сайт магазина кваса</p>
-                <p class="button catalog-item-price">9900₽</p>
-              </div>
-            </li>
-          </ul>
+          <div class="items">
+            <div class="items-sort container">
+              <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-item">
+                  <legend class="filter-legend">Сортировать:</legend>
+                  <button class="button button-filter">По цене</button>
+                  <button class="button button-filter">По типу</button>
+                  <button class="button button-filter">По названию</button>
+                  <button class="button button-arrow button down">
+                    <img src="img/arrow.png" width="11px" height="10px" alt="arrow-down">
+                  </button>
+                  <button class="button button-arrow button up">
+                    <img class="arrow-up" src="img/arrow.png" width="11px" height="10px" alt="arrow-up">
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="catalog-wraper container">
+              <h3 class="visually-hidden">Каталог макетов</h3>
+              <ul class="catalog-list">
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">Sedona</span>
+                    <img class="product-card" src="img/mask.group-sedona.jpg" width="360" height="580" alt="Sedona">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">Sedona</h3>
+                    <p class="item-description">Информационый сайт<br>для туристов</br></p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">Pink</span>
+                    <img class="product-card" src="img/mask-group-pink.jpg" width="358" height="578" alt="Pink">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">Pink</h3>
+                    <p class="item-description">Информационый сайт</p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">Borodinski</span>
+                    <img class="product-card" src="img/mask-group-borodinski.jpg" width="358" height="578"
+                      alt="Borodinski">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">Borodinski</h3>
+                    <p class="item-description">Сайт Barbershop</p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">Mishka</span>
+                    <img class="product-card" src="img/mask-group-mishka.jpg" width="358" height="578" alt="Mishka">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">Mishka</h3>
+                    <p class="item-description">Сайт вязание на заказ</p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">A+</span>
+                    <img class="product-card" src="img/mask-group-aplus.jpg" width="358" height="578" alt="A+">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">A+</h3>
+                    <p class="item-description">Сайт онлине обучения</p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+                <li class="catalog-item">
+                  <div class="card-peak">
+                    <img src="img/rectangle.png" width="360" height="40" alt="rectangle-card">
+                  </div>
+                  <a href="blank.html"><span class="visually-hidden">KBACT</span>
+                    <img class="product-card" src="img/mask-group-kvast.jpg" width="358" height="578" alt="Kvast">
+                  </a>
+                  <div class="info-plus">
+                    <h3 class="item-title">KBACT</h3>
+                    <p class="item-description">Сайт магазина кваса</p>
+                    <button class="button button--red catalog-item-price">9900₽</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="container next-page">
+              <button class="button button--grey button-number">1</button>
+              <button class="button button--grey button-number">2</button>
+              <button class="button button--grey button-number">3</button>
+              <button class="button button--grey">Следуйщая</button>
+            </div>
+          </div>
         </section>
       </section>
       <section class="contacts">
@@ -198,14 +242,12 @@
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1594311411536!5m2!1sen!2s"
-            width="1440" height="416" frameborder="0" style="border:0;" class="map" allowfullscreen="" aria-hidden="false"
-            title="Nerds Design Studio 191186, Сант-Петербург,
+            width="100%" height="416" style="border:0;" class="map" allowfullscreen="" aria-hidden="false" title="Nerds Design Studio 191186, Сант-Петербург,
           ул. Б.Конюшенаная, д.19/8" tabindex="0">
           </iframe>
         </div>
       </section>
     </main>
-   
     <footer class="page-footer main footer container">
       <div class="footer-content">
         <div class="footer-social">
