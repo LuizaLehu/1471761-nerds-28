@@ -38,7 +38,6 @@
   <body>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     <main class="page-catalog container">
-
       <aside class="aside-filter">
         <section class="catalog">
           <form method="get" action="https://echo.htmlacademy.ru">
@@ -70,45 +69,61 @@
         </section>
         <section class="products">
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="fieldset">
               <legend class="title-group">Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input type="radio" name="grid" id="grid-adaptiv" value="adaptiv">
-                  <label for="grid-adaptiv">Адаптивная</label>
+                  <label class="radio" for="grid-adaptiv">
+                    <input class="radio-input" type="radio" name="grid" id="grid-adaptiv" value="adaptiv">
+                    <span class="radio-box"></span>
+                    Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input type="radio" name="grid" id="grid-fixed" value="fixed">
-                  <label for="grid-fixed">Фиксированая</label>
+                  <label class="radio" for="grid-fixed">
+                    <input class="radio-input" type="radio" name="grid" id="grid-fixed" value="fixed">
+                    <span class="radio-box"></span>
+                    Фиксированая</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input type="radio" name="grid" id="grid-rubbered" value="rubbered">
-                  <label for="grid-rubbered">Резинованая</label>
+                  <label class="radio" for="grid-rubbered">
+                    <input class="radio-input" type="radio" name="grid" id="grid-rubbered" value="rubbered">
+                    <span class="radio-box"></span>
+                    Резинованая</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="fieldset">
               <legend class="title-group">Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
+                  <label class="check option" for="filter-slider">
+                    <input class="check-input" type="checkbox" name="slider" id="filter-slider" checked>
+                    <span class="check-box"></span>
+                    Слайдер</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input type="checkbox" name="advantages" id="filter-advantages">
-                  <label for="filter-advantages">Блок преимуществ</label>
+                  <label class="check option" for="filter-advantages">
+                    <input class="check-input" type="checkbox" name="advantages" id="filter-advantages">
+                    <span class="check-box"></span>
+                    Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input type="checkbox" name="new" id="filter-new" checked>
-                  <label for="filter-new">Новости</label>
+                  <label class="check option" for="filter-new">
+                    <input class="check-input" type="checkbox" name="new" id="filter-new" checked>
+                    <span class="check-box"></span>
+                    Новости</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery">Галерея</label>
+                  <label class="check option" for="filter-gallery">
+                    <input class="check-input" type="checkbox" name="gallery" id="filter-gallery">
+                    <span class="check-box"></span>
+                    Галерея</label>
                 </li>
                 <li class="filter-option filter-checkbox">
-                  <input type="checkbox" name="cart" id="filter-cart">
-                  <label for="filter-cart">Корзина</label>
+                  <label class="check option" for="filter-cart">
+                    <input class="check-input" type="checkbox" name="cart" id="filter-cart">
+                    <span class="check-box"></span>
+                    Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -144,7 +159,7 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">Sedona</h3>
-                <p class="item-description">Информационый сайт<br>для туристов</br></p>
+                <p class="item-description">Информационый сайт<br>для туристов</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
@@ -157,7 +172,7 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">Pink</h3>
-                <p class="item-description">Информационый сайт</p>
+                <p class="item-description">Информационый сайт<br>для поднятия настроения</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
@@ -170,7 +185,7 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">Borodinski</h3>
-                <p class="item-description">Сайт Barbershop</p>
+                <p class="item-description">Сайт Barbershop<br>Мужские стрижки</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
@@ -183,7 +198,7 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">Mishka</h3>
-                <p class="item-description">Сайт вязание на заказ</p>
+                <p class="item-description">Сайт вязание на заказ<br>Предметы интериера</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
@@ -196,7 +211,7 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">A+</h3>
-                <p class="item-description">Сайт онлине обучения</p>
+                <p class="item-description">Сайт онлине обучения<br>для всех желающих</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
@@ -209,22 +224,21 @@
               </a>
               <div class="info-plus">
                 <h3 class="item-title">KBACT</h3>
-                <p class="item-description">Сайт магазина кваса</p>
+                <p class="item-description">Сайт магазина кваса<br>натуральный продукт</p>
                 <button class="button button--red catalog-item-price">9900₽</button>
               </div>
             </li>
           </ul>
         </div>
-        <div class="next-page">
+        <div class="next-page container">
           <button class="button button--grey button-number">1</button>
           <button class="button button--grey button-number">2</button>
           <button class="button button--grey button-number">3</button>
-          <button class="button button--grey">Следуйщая</button>
+          <button class="button button--grey">Следующая</button>
         </div>
       </div>
       </section>
       </section>
-
     </main>
     <section class="contacts">
       <h5 class="visually-hidden">Our location</h5>
@@ -244,7 +258,7 @@
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2s!4v1594311411536!5m2!1sen!2s"
-          width="100%" height="416" style="border:0;" class="map" allowfullscreen="" aria-hidden="false" title="Nerds Design Studio 191186, Сант-Петербург,
+          width="100%" height="416" style="border:0;" class="map" allowfullscreen="" aria-hidden="true" title="Nerds Design Studio 191186, Сант-Петербург,
         ул. Б.Конюшенаная, д.19/8" tabindex="0">
         </iframe>
       </div>
